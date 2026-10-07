@@ -1,0 +1,25 @@
+{
+  "output_dir": "outputs/simulations",
+  "operator_seed": 52001,
+  "sensor_dim": 32,
+  "target_dim": 4,
+  "interference_rank": 8,
+  "overlap": 0.9,
+  "snr_db": 5.0,
+  "inr_db": [0.0, 10.0, 20.0],
+  "axes": {
+    "rotation_toward_target": {"levels": [0.0, 1.0, 2.0, 5.0, 10.0, 20.0]},
+    "rotation_toward_complement": {"levels": [1.0, 2.0, 5.0, 10.0, 20.0]},
+    "omitted_direction": {"levels": ["target_coupled", "target_orthogonal"]},
+    "coloured_noise": {"levels": [0.3, 0.6, 0.9]}
+  },
+  "alpha": 0.01,
+  "beta": 0.05,
+  "n_target_calibration": 4096,
+  "n_interference_calibration_per_family": 2048,
+  "n_secondary_for_whitening": 256,
+  "n_test_null_per_family": 100000,
+  "n_test_target": 20000,
+  "calibration_replicates": 200,
+  "candidate_sensitivities": {"start": 0.005, "stop": 0.995, "count": 199}
+}

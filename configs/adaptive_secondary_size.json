@@ -1,0 +1,15 @@
+{
+  "output_dir": "outputs/simulations",
+  "operator_seed": 50001,
+  "random_stream": 55,
+  "sensor_dim": 32,
+  "target_dim": 4,
+  "interference_rank": 8,
+  "snr_db": 5.0,
+  "conditions": [[0.75, 0.0], [0.9, 0.0], [0.95, 0.0], [0.95, 10.0], [0.9, 10.0]],
+  "secondary_sizes": [64, 128, 256, 512, 1024],
+  "mimic_amplitude": 16.0,
+  "alpha": 0.01,
+  "n_mimic_trials": 20000,
+  "n_null_trials_for_thresholds": 30000
+}

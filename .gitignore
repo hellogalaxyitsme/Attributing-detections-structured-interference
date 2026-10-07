@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local data and generated analysis outputs
+data/
+datasets/
+outputs/
+cache/
+logs/
+*.mat
+configs/*_local.json
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,29 @@
+{
+  "data_root": "/path/to/MUUFLGulfport/MUUFLGulfportDataCollection",
+  "flights": {
+    "campus3": "muufl_gulfport_campus_3.mat",
+    "campus4": "muufl_gulfport_campus_4.mat"
+  },
+  "signatures_file": "tgt_img_spectra.mat",
+  "output_dir": "outputs/muufl",
+  "background_subspace_rank": 10,
+  "detectors": ["ace", "amf", "tcimf", "osp", "declared_f", "whitened_declared_ace", "declared_ace", "whitened_declared_f"],
+  "eligibility": {"sizes_m": [1.0, 3.0], "occlusion_categories": [0, 1]},
+  "certification": {"per_pixel_alpha": 0.001, "beta": 0.05},
+  "window_level": {"window_alpha": 0.01, "beta": 0.05, "halo_radii": [1, 2]},
+  "rank_sensitivity": {"detector": "declared_f", "ranks": [5, 20]},
+  "repeated_measures": {"comparisons": [["declared_f", "ace"], ["declared_f", "amf"], ["whitened_declared_ace", "ace"]]},
+  "implants": {
+    "host_seed": 57001,
+    "host_pixels_per_flight": 20000,
+    "abundances": [0.05, 0.1, 0.15, 0.2, 0.3, 0.5, 0.75, 1.0],
+    "measured_abundances": [0.2, 0.5, 1.0],
+    "perturbation": {
+      "angles_deg": [0.5, 1.0, 2.0, 4.0],
+      "abundances": [0.2, 0.5, 1.0],
+      "random_directions": 10,
+      "random_seed": 59001
+    }
+  },
+  "coherence_variability": {"half_subsamples": 20, "seed": 59002}
+}

@@ -1,0 +1,20 @@
+{
+  "output_dir": "outputs/simulations",
+  "seeds": [49001, 49003, 49007, 49009, 49013, 49019, 49021, 49027, 49031, 49033, 49037, 49039, 49043, 49049, 49051, 49057],
+  "sensor_dim": 32,
+  "target_dim": 4,
+  "interference_rank": 8,
+  "overlaps": [0.9, 0.95],
+  "snr_db": 5.0,
+  "inr_db": 10.0,
+  "noise_laws": ["gaussian", "student_t", "bursty", "compound_gaussian"],
+  "alpha": 0.01,
+  "beta": 0.05,
+  "n_target_calibration": 4096,
+  "n_interference_calibration_per_family": 2048,
+  "n_test_null_per_family": 100000,
+  "n_test_target": 20000,
+  "calibration_replicates": 400,
+  "coarse_candidate_sensitivities": [0.01, 0.02, 0.05, 0.1, 0.2, 0.4, 0.6, 0.75],
+  "fine_candidate_sensitivities": {"start": 0.005, "stop": 0.995, "count": 199}
+}
